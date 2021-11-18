@@ -9,6 +9,6 @@ JavaScriptとHTML5(canvas)でできています。<br><br>
 `gote=1`  CPUが先手（あなたが後手）になります。新規（後手）ボタンと同じ挙動です。<br>
 `black=1` ブラックモード。6万回分のリバーシ棋譜DBを参考にして動くようになります。正直弱くなります。
 
-##license
+## license
 `reversi.js` `reversi_style.css` `reversi.html` に限りGPL3ライセンスに基づいて再利用可能です。<br>
 他のファイルは再利用、再配布不可です。
