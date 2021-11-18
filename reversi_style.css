@@ -1,0 +1,62 @@
+/* 
+    reversi.html のcss
+    21.11.08 @avaice_
+*/
+
+body{
+    background-image: url("./bg058_04.gif");
+}
+
+.command{
+    margin: 10px;
+}
+
+.board{
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.status{
+    margin:0px;
+    padding: 0px;
+}
+
+.ver{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+
+.balloon{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    padding-inline: 20px;
+    background-color: rgba(220, 220, 220, 0.842);
+    border-radius: 50px;
+    height: 40px;
+    width: auto;
+}
+  
+.balloon-text{
+    margin-top: 8px;
+}
+
+.debug{
+    display: none;
+}
+
+.button{
+    width: 70px;
+}
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .logo{
+        max-width: 75%;
+    }
+    .button{
+        width:15vw;
+    }
+}

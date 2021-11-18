@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>あいすリバーシ</title>
+    <script type="text/javascript" src="kif_b.js"></script>
+    <script type="text/javascript" src="kif_w.js"></script>
+    <script type="text/javascript" src="reversi.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="reversi_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="logo.png" class="logo">
+        <div id="status" class="status">loading...</div>
+        <div id="debug" class="debug"></div><br>
+        
+        <div style="height:70px;">
+            <div class="icemaru">
+                <img src="icemaru_thumb.png" class="icemaru_img">
+                <div class="balloon" id="balloon">
+                    <p class="balloon-text"></p>
+                  </div>
+            </div>
+        </div>
+        
+        
+        <canvas id="board" class="board">
+            このゲームをプレイするには、canvasタグをサポートしたブラウザが必要です。
+        </canvas>
+        <div class="command">
+            <img src="new_s.png" class="button" onclick="if(getParam('debug') == 1)_dbg=1;else _dbg=0;window.location.href = 'reversi.html?debug=' + _dbg;"/>
+            <img src="new_g.png" class="button" onclick="if(getParam('debug') == 1)_dbg=1;else _dbg=0;window.location.href = 'reversi.html?gote=1&debug=' + _dbg;"/>
+            <img src="pass.png" class="button" onclick="playerPass();"/>
+            <img src="twitter.png" class="button" onclick='window.open("https://twitter.com/avaice_");'/>
+            <div class="ver">Ver.Unknown</div>
+            <!--<input type="button" value="1手戻す" onclick="reverse();"/>-->
+        </div>
+        
+    </center>
+</body>
+</html>
